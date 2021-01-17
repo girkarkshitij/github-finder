@@ -1,8 +1,9 @@
 import React from 'react';
+import Navbar from './components/layout/Navbar';
 
 class App extends React.Component {
   render() {
-    return <h1>Hello World</h1>;
+    return <Navbar />;
   }
 }
 
