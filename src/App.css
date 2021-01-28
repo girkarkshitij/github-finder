@@ -2,9 +2,9 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
+  --primary-color: #57ba98;
   --dark-color: #333333;
-  --light-color: #f4f4f4;
+  --light-color: #808080;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--dark-color);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ img {
 
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
@@ -112,7 +112,7 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: var(--dark-color) 1px outset;
   margin: 0.7rem 0;
 }
 
@@ -241,7 +241,6 @@ img {
   padding: 0.7rem;
   margin: 1rem 0;
   opacity: 0.9;
-  background: var(--light-color);
   color: #333;
 }
 
@@ -259,6 +258,7 @@ img {
 .alert-light {
   background: var(--light-color);
   color: #333;
+  grid-gap: 0.5rem0.0.1;
 }
 
 .btn-dark,
@@ -382,10 +382,15 @@ table th {
     display: none;
   }
 
+  .card {
+    text-align: center;
+  }
+
   .grid-2,
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
+    grid-gap: 0.2rem;
   }
 
   /* Text Styles */
